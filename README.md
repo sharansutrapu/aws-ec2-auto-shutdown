@@ -1,4 +1,4 @@
-# ec2-auto-shutdown
+# aws-ec2-auto-shutdown
 
 An AWS Lambda function that automatically stops EC2 instances on a daily or weekly schedule based on instance tags. Sends a Slack notification summarising what was stopped and publishes a CloudWatch custom metric with the shutdown count.
 
@@ -71,8 +71,8 @@ UsStopDay    = 'Saturday'
 ### 1. Clone and configure
 
 ```bash
-git clone https://github.com/sharansutrapu/ec2-auto-shutdown.git
-cd ec2-auto-shutdown
+git clone https://github.com/sharansutrapu/aws-ec2-auto-shutdown.git
+cd aws-ec2-auto-shutdown
 ```
 
 Edit `constant.py` with your regions, Slack webhook URL, and stop times.
